@@ -8,10 +8,10 @@ set(CMAKE_TOOLCHAIN_FILE ${CMAKE_SOURCE_DIR}/arm-none-eabi-gcc.cmake)
 
 # Setup project, output and linker file
 project(MyFirstEmbeddedCmake)
-set(EXECUTABLE ${PROJECT_NAME})
+set(EXECUTABLE ${PROJECT_NAME}.elf)
 set(LINKER_FILE ${CMAKE_SOURCE_DIR}/Device/STM32F407ZGTx_FLASH.ld)
 
-enable_language(C ASM)
+enable_language(CXX C ASM)
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS OFF)
@@ -21,7 +21,7 @@ message(STATUS "CMAKE_TOOLCHAIN_FILE is: ${CMAKE_TOOLCHAIN_FILE}")
 
 # List of source files
 set(SRC_FILES
-        Src/main.c
+        Src/main.cpp
         Device/startup_stm32f407xx.s
         Src/system_stm32f4xx.c
         Src/gpio.c
