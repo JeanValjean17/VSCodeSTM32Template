@@ -6,13 +6,13 @@
     "configurations": [
         {
             "cwd": "${workspaceRoot}",
-            "executable": "./Build/MyFirstEmbeddedCmake.elf",
+            "executable": "./build/MyFirstEmbeddedCmake.elf",
             "name": "Debug Microcontroller",
             "request": "launch",
             "type": "cortex-debug",
             "servertype": "jlink",
-            "serverpath": "C:/Program Files/SEGGER/JLink_V796g/JLinkGDBServerCL.exe",
-            "armToolchainPath": "C:/gnu-arm/10 2021.10/bin",
+            "serverpath": "/home/jean/opt/SEGGER/JLink_Linux_V796g_x86_64/JLinkGDBServer",
+            "armToolchainPath": "/home/jean/opt/gcc-arm-none-eabi-10.3-2021.10/bin",
             "device": "STM32F407ZG",
             "interface": "swd",
             "serialNumber": "", // add J-Link serial number if having multiple attached the same time.

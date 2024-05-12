@@ -89,7 +89,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
-  HAL_GPIO_WritePin(GPIOF, STAT3_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOF, STAT2_Pin, GPIO_PIN_SET);
   
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */

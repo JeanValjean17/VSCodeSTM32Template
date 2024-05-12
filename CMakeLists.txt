@@ -8,7 +8,7 @@ set(CMAKE_TOOLCHAIN_FILE ${CMAKE_SOURCE_DIR}/arm-none-eabi-gcc.cmake)
 
 # Setup project, output and linker file
 project(MyFirstEmbeddedCmake)
-set(EXECUTABLE ${PROJECT_NAME}.elf)
+set(EXECUTABLE ${PROJECT_NAME})
 set(LINKER_FILE ${CMAKE_SOURCE_DIR}/Device/STM32F407ZGTx_FLASH.ld)
 
 enable_language(C ASM)
