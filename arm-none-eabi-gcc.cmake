@@ -6,7 +6,7 @@ set(CMAKE_CXX_COMPILER_FORCED TRUE)
 set(CMAKE_C_COMPILER_ID GNU)
 set(CMAKE_CXX_COMPILER_ID GNU)
 
-#set(ARM_TOOLCHAIN_DIR "C:/gnu-arm/10 2021.10/bin")
+set(ARM_TOOLCHAIN_DIR "/home/jean/opt/gcc-arm-none-eabi-10.3-2021.10/bin")
 set(BINUTILS_PATH ${ARM_TOOLCHAIN_DIR})
 
 set(TOOLCHAIN_PREFIX arm-none-eabi-)
@@ -20,9 +20,9 @@ set(CMAKE_LINKER                    ${TOOLCHAIN_PREFIX}g++)
 set(CMAKE_OBJCOPY                   ${TOOLCHAIN_PREFIX}objcopy)
 set(CMAKE_SIZE                      ${TOOLCHAIN_PREFIX}size)
 
-set(CMAKE_EXECUTABLE_SUFFIX_ASM     ".elf")
-set(CMAKE_EXECUTABLE_SUFFIX_C       ".elf")
-set(CMAKE_EXECUTABLE_SUFFIX_CXX     ".elf")
+#set(CMAKE_EXECUTABLE_SUFFIX_ASM     ".elf")
+#set(CMAKE_EXECUTABLE_SUFFIX_C       ".elf")
+#set(CMAKE_EXECUTABLE_SUFFIX_CXX     ".elf")
 
 # MCU specific flags
 set(TARGET_FLAGS "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard ")

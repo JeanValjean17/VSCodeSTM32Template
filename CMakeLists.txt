@@ -25,12 +25,15 @@ set(SRC_FILES
         Device/startup_stm32f407xx.s
         Src/system_stm32f4xx.c
         Src/gpio.c
+        Src/usart.c
         Src/stm32f4xx_hal_msp.c
         Src/stm32f4xx_it.c
         Src/sysmem.c
         Src/syscalls.c
         Src/system_stm32f4xx.c
+        
         Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+        Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
         Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
         Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
         Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
@@ -44,7 +47,8 @@ set(SRC_FILES
         Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
         Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
         Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
-        Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+        Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c        
+        Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c
         )
 
 # Build the executable based on the source files

@@ -10,9 +10,6 @@
                 "STM32F407xx",
                 "DEBUG"
             ],
-            "forcedInclude": [
-                "${workspaceFolder}/src/IncludeMcuLibConfig.h"
-            ],
             "compilerPath": "/home/jean/opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++",
             "cStandard": "c17",
             "cppStandard": "c++17",

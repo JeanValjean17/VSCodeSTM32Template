@@ -3,6 +3,7 @@
         "stm32f4xx_hal_conf.h": "c",
         "stm32f4xx_hal_cortex.h": "c",
         "stat.h": "c",
-        "time.h": "c"
+        "time.h": "c",
+        "stm32f4xx.h": "c"
     }
 }

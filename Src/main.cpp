@@ -18,7 +18,9 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "usart.h"
 #include "gpio.h"
+
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -86,11 +88,16 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_USART6_UART_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
+  HAL_GPIO_WritePin(GPIOF, STAT3_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(GPIOF, STAT2_Pin, GPIO_PIN_SET);
   
+  uint8_t data[23] = "Something went wrong\r\n";
+  
+  HAL_UART_Transmit(&huart6, data, 23, HAL_MAX_DELAY);
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
